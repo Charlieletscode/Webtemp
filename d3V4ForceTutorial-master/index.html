@@ -34,7 +34,7 @@
       .force("charge", d3.forceManyBody())
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-  d3.json("file://C:\Users\charl\Desktop\d3V4ForceTutorial-master\miserables.json", function(error, graph) {
+  d3.json("https://github.com/Charlieletscode/Webtemp/blob/main/d3V4ForceTutorial-master/miserables.json", function(error, graph) {
     if (error) throw error;
     
     graph.links = graph.links.map(function(ele) {
